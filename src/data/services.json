@@ -1,0 +1,155 @@
+{
+  "ownerName": "Julien Gidel",
+  "tagline": "Expert Tech & Consultant",
+  "contact": {
+    "email": "gidjulien@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/julien-gidel-506a6596/"
+  },
+  "services": [
+    {
+      "id": "cto-consultant",
+      "name": "CTO Consultant",
+      "description": "Accompagnement stratégique et technique pour structurer votre équipe tech et prendre les bonnes décisions architecturales.",
+      "color": "#6366f1",
+      "size": 2,
+      "details": [
+        {
+          "id": "cto-strategy",
+          "name": "Stratégie technique",
+          "description": "Définition de la roadmap technique alignée avec vos objectifs business."
+        },
+        {
+          "id": "cto-team",
+          "name": "Structuration d'équipe",
+          "description": "Recrutement, organisation et montée en compétences de votre équipe de développement."
+        },
+        {
+          "id": "cto-architecture",
+          "name": "Choix d'architecture",
+          "description": "Sélection des technologies et design de l'architecture adaptés à vos besoins."
+        }
+      ],
+      "cta": {
+        "label": "Discutons de votre projet",
+        "link": "mailto:gidjulien@gmail.com?subject=CTO%20Consultant"
+      }
+    },
+    {
+      "id": "code-audit",
+      "name": "Audit de Code",
+      "description": "Analyse approfondie de votre codebase pour identifier les problèmes de performance, sécurité et maintenabilité.",
+      "color": "#ef4444",
+      "size": 1.8,
+      "details": [
+        {
+          "id": "audit-security",
+          "name": "Audit sécurité",
+          "description": "Identification des vulnérabilités et recommandations pour sécuriser votre application."
+        },
+        {
+          "id": "audit-perf",
+          "name": "Audit performance",
+          "description": "Analyse des goulots d'étranglement et optimisations pour améliorer la rapidité."
+        },
+        {
+          "id": "audit-quality",
+          "name": "Qualité du code",
+          "description": "Revue des bonnes pratiques, dette technique et maintenabilité."
+        },
+        {
+          "id": "audit-report",
+          "name": "Rapport détaillé",
+          "description": "Document complet avec priorités et plan d'action concret."
+        }
+      ],
+      "cta": {
+        "label": "Demander un audit",
+        "link": "mailto:gidjulien@gmail.com?subject=Audit%20de%20Code"
+      }
+    },
+    {
+      "id": "custom-tools",
+      "name": "Outils Personnalisés",
+      "description": "Conception et développement d'outils sur mesure pour automatiser vos processus et gagner en productivité.",
+      "color": "#10b981",
+      "size": 1.6,
+      "details": [
+        {
+          "id": "tools-automation",
+          "name": "Automatisation",
+          "description": "Scripts et workflows pour automatiser les tâches répétitives."
+        },
+        {
+          "id": "tools-internal",
+          "name": "Outils internes",
+          "description": "Dashboards, back-offices et applications métier sur mesure."
+        },
+        {
+          "id": "tools-integration",
+          "name": "Intégrations",
+          "description": "Connexion de vos outils existants via APIs et webhooks."
+        }
+      ],
+      "cta": {
+        "label": "Décrivez votre besoin",
+        "link": "mailto:gidjulien@gmail.com?subject=Outil%20Personnalisé"
+      }
+    },
+    {
+      "id": "training",
+      "name": "Formation",
+      "description": "Formations techniques personnalisées pour monter en compétences vos équipes sur les technologies modernes.",
+      "color": "#f59e0b",
+      "size": 1.5,
+      "details": [
+        {
+          "id": "training-web",
+          "name": "Développement Web",
+          "description": "React, TypeScript, Node.js et les bonnes pratiques modernes."
+        },
+        {
+          "id": "training-archi",
+          "name": "Architecture",
+          "description": "Design patterns, microservices, clean architecture."
+        },
+        {
+          "id": "training-devops",
+          "name": "DevOps",
+          "description": "CI/CD, Docker, Kubernetes et infrastructure as code."
+        }
+      ],
+      "cta": {
+        "label": "Organiser une formation",
+        "link": "mailto:gidjulien@gmail.com?subject=Formation"
+      }
+    },
+    {
+      "id": "architecture",
+      "name": "Architecture Logicielle",
+      "description": "Conception d'architectures robustes et scalables pour vos applications.",
+      "color": "#8b5cf6",
+      "size": 1.7,
+      "details": [
+        {
+          "id": "archi-design",
+          "name": "Design système",
+          "description": "Conception de l'architecture technique adaptée à vos contraintes."
+        },
+        {
+          "id": "archi-scale",
+          "name": "Scalabilité",
+          "description": "Architectures prêtes à supporter la croissance de votre produit."
+        },
+        {
+          "id": "archi-doc",
+          "name": "Documentation",
+          "description": "Schémas, ADRs et documentation technique complète."
+        }
+      ],
+      "cta": {
+        "label": "Parlons architecture",
+        "link": "mailto:gidjulien@gmail.com?subject=Architecture"
+      }
+    }
+  ]
+}
