@@ -2,11 +2,16 @@ import type { Service } from '../types'
 
 interface ServicePanelProps {
   service: Service
+  onClose: () => void
 }
 
-export function ServicePanel({ service }: ServicePanelProps) {
+export function ServicePanel({ service, onClose }: ServicePanelProps) {
   return (
     <div className="service-panel">
+      <button className="close-panel" onClick={onClose}>
+        ×
+      </button>
+
       <h2 style={{ color: service.color }}>{service.name}</h2>
       <p className="service-description">{service.description}</p>
 

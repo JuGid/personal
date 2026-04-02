@@ -67,7 +67,7 @@ function App() {
             <button className="back-button" onClick={handleBack}>
               ← Vue d'ensemble
             </button>
-            <ServicePanel service={activeService} />
+            <ServicePanel service={activeService} onClose={handleBack} />
           </>
         )}
 

@@ -89,11 +89,17 @@ html, body, #root {
   background: rgba(10, 10, 30, 0.85);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 20px;
-  padding: 25px 35px;
+  padding: 30px 40px 25px;
   color: white;
   pointer-events: auto;
   backdrop-filter: blur(20px);
   text-align: center;
+}
+
+.service-panel .close-panel {
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
 .service-panel h2 {
