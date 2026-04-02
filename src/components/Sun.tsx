@@ -1,6 +1,10 @@
-import { useRef, useMemo } from 'react'
+import { useRef, useMemo, useState } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
+
+interface SunProps {
+  onClick?: () => void
+}
 
 const sunVertexShader = `
   varying vec2 vUv;
@@ -134,10 +138,11 @@ const coronaFragmentShader = `
   }
 `
 
-export function Sun() {
+export function Sun({ onClick }: SunProps) {
   const sunRef = useRef<THREE.Mesh>(null)
   const coronaRef = useRef<THREE.Mesh>(null)
   const corona2Ref = useRef<THREE.Mesh>(null)
+  const [hovered, setHovered] = useState(false)
 
   const sunUniforms = useMemo(() => ({
     time: { value: 0 }
@@ -206,7 +211,23 @@ export function Sun() {
       </mesh>
 
       {/* Surface du soleil */}
-      <mesh ref={sunRef}>
+      <mesh
+        ref={sunRef}
+        onClick={(e) => {
+          e.stopPropagation()
+          onClick?.()
+        }}
+        onPointerOver={(e) => {
+          e.stopPropagation()
+          setHovered(true)
+          document.body.style.cursor = 'pointer'
+        }}
+        onPointerOut={() => {
+          setHovered(false)
+          document.body.style.cursor = 'auto'
+        }}
+        scale={hovered ? 1.05 : 1}
+      >
         <sphereGeometry args={[1.5, 128, 128]} />
         <shaderMaterial
           uniforms={sunUniforms}

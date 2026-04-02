@@ -1,0 +1,100 @@
+{
+  "name": "Julien Gidel",
+  "title": "Expert Tech & Consultant",
+  "photo": "/photo.jpg",
+  "summary": "Passionné par la technologie et l'innovation, j'accompagne les entreprises dans leur transformation digitale et la structuration de leurs équipes techniques.",
+  "experience": [
+    {
+      "id": "exp-1",
+      "company": "Coda",
+      "position": "Référent pédagogique",
+      "period": "2024 - Présent",
+      "description": "Gestion de la pédagogie de l'école."
+    },
+    {
+      "id": "exp-2",
+      "company": "Mosaic Studio",
+      "position": "Indépendant",
+      "period": "2026 - Présent",
+      "description": "Accompagnement des entreprises."
+    },
+    {
+      "id": "exp-3",
+      "company": "Green Gooding",
+      "position": "Founding CTO",
+      "period": "2025 - Présent",
+      "description": "Création d'une marketplace B2B et B2C."
+    },
+    {
+      "id": "exp-4",
+      "company": "Apivia Macif Mutuelle",
+      "position": "Lead développeur",
+      "period": "2022 - 2024",
+      "description": "Gestion technique d'une équipe de développeurs."
+    },
+    {
+      "id": "exp-5",
+      "company": "Apivia Macif Mutuelle",
+      "position": "Développeur",
+      "period": "2020 - 2022",
+      "description": "Développement d'applications internes."
+    },
+    {
+      "id": "exp-6",
+      "company": "Polytech Tours",
+      "position": "Enseignant vacataire",
+      "period": "2020 - 2024",
+      "description": "Action de formation à des étudiants ingénieurs."
+    },
+    {
+      "id": "exp-7",
+      "company": "ACII",
+      "position": "Ingénieur d'études",
+      "period": "2019 - 2021",
+      "description": "Développement d'applications."
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "school": "Polytech Tours",
+      "degree": "Ingénieur en Informatique Industrielle",
+      "period": "2016 - 2019",
+      "description": "Diplôme d'ingénieur."
+    },
+    {
+      "id": "edu-2",
+      "school": "Université de Sherbrooke",
+      "degree": "Ingénieur en Informatique Industrielle",
+      "period": "2018 - 2018",
+      "description": "Semestre à l'étranger."
+    },
+    {
+      "id": "edu-3",
+      "school": "Université d'Orléans",
+      "degree": "DUT Informatique",
+      "period": "2015 - 2016",
+      "description": "En année spéciale (1 an)."
+    },
+    {
+      "id": "edu-4",
+      "school": "Université d'Orléans",
+      "degree": "DUT QLIO",
+      "period": "2013 - 2015",
+      "description": "En alternance."
+    }
+  ],
+  "skills": [
+    "React",
+    "TypeScript",
+    "Node.js",
+    "Architecture Logicielle",
+    "DevOps",
+    "Management d'équipe",
+    "Symfony",
+    "PHP",
+    "Tailwind",
+    "Daisyui",
+    "..."
+  ]
+}

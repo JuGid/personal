@@ -13,6 +13,7 @@ interface GalaxyProps {
   selectedProject: Project | null
   onCampusClick: (campus: Campus) => void
   onProjectClick: (project: Project) => void
+  onSunClick?: () => void
 }
 
 // Calcule les paramètres d'orbite pour chaque campus
@@ -35,7 +36,8 @@ export function Galaxy({
   activeCampus,
   selectedProject,
   onCampusClick,
-  onProjectClick
+  onProjectClick,
+  onSunClick
 }: GalaxyProps) {
   const { camera } = useThree()
   const targetPosition = useRef(new THREE.Vector3(25, 15, 25))
@@ -107,7 +109,7 @@ export function Galaxy({
       <ambientLight intensity={0.2} />
 
       {/* Soleil central */}
-      <Sun />
+      <Sun onClick={onSunClick} />
 
       {campuses.map((campus, index) => {
         const { orbitRadius, orbitSpeed, orbitOffset } = orbitParams[index]

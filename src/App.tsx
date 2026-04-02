@@ -3,14 +3,18 @@ import { Canvas } from '@react-three/fiber'
 import { Galaxy } from './components/Galaxy'
 import { ServicePanel } from './components/ServicePanel'
 import { DetailPanel } from './components/DetailPanel'
+import { ProfilePanel } from './components/ProfilePanel'
 import galaxyData from './data/services.json'
-import type { Service, ServiceDetail, GalaxyData } from './types'
+import profileData from './data/profile.json'
+import type { Service, ServiceDetail, GalaxyData, Profile } from './types'
 
 const data = galaxyData as GalaxyData
+const profile = profileData as Profile
 
 function App() {
   const [activeService, setActiveService] = useState<Service | null>(null)
   const [selectedDetail, setSelectedDetail] = useState<ServiceDetail | null>(null)
+  const [showProfile, setShowProfile] = useState(false)
 
   const handleServiceClick = (service: Service) => {
     if (activeService?.id === service.id) {
@@ -19,6 +23,7 @@ function App() {
     } else {
       setActiveService(service)
       setSelectedDetail(null)
+      setShowProfile(false)
     }
   }
 
@@ -33,6 +38,16 @@ function App() {
 
   const handleClosePanel = () => {
     setSelectedDetail(null)
+  }
+
+  const handleSunClick = () => {
+    setShowProfile(!showProfile)
+    setActiveService(null)
+    setSelectedDetail(null)
+  }
+
+  const handleCloseProfile = () => {
+    setShowProfile(false)
   }
 
   return (
@@ -52,6 +67,7 @@ function App() {
             selectedProject={selectedDetail}
             onCampusClick={handleServiceClick}
             onProjectClick={handleDetailClick}
+            onSunClick={handleSunClick}
           />
         </Canvas>
       </div>
@@ -71,8 +87,12 @@ function App() {
           </>
         )}
 
-        {!activeService && (
-          <p className="hint">Explorez mes services en cliquant sur une planète</p>
+        {!activeService && !showProfile && (
+          <p className="hint">Explorez mes services en cliquant sur une planète, ou cliquez sur le soleil pour voir mon profil</p>
+        )}
+
+        {showProfile && (
+          <ProfilePanel profile={profile} onClose={handleCloseProfile} />
         )}
 
         {selectedDetail && (
